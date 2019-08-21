@@ -1,0 +1,116 @@
+/* Arquivo Css */
+/* O css trabalha com seletores
+se quiser declarar a cor ou tamanho de qualquer tag 
+deve - se inserir a tag como seletor e dentro as propriedades */
+
+p{
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 1px #111111;
+
+}
+
+body{
+    background-color: black;
+}
+
+/* Este '*' significa que mudara todas as propriedades do browser */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #35b8b0;
+    height: 100px;
+    padding: 10px;
+}
+
+footer{
+    clear: both;
+    background-color: #35b8b0;
+    height: 30px;
+    text-align: center;
+    padding: 10px 05px 0px 0px;
+
+}
+/* text-shadow é uma propriedade de sombra do texto*/
+h1{
+    color: #FF7F50;
+    text-shadow: 1px 1px 1px #111111;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+/*Para declarar varias divs, se usa o id e se coloca a '#' Para declarar que é um id*/
+
+/* utiliza-se min-heigth para indicar que é o tamanho minimo, pode crescer de acordo com o conteudo inserido*/
+
+/* utiliza-se a propriedade float para indicar se a div ficara a direita ou esquerda */
+
+/* Quando se utiliza a propriedade float sempre na div de baixo deve-se usar um clear para limpar o float e mostrar o footer por exemplo*/
+
+/*
+#div_esquerda{
+    background-color: red;
+    min-height: 200px;
+    width:60%;
+    float:left;
+}
+
+#div_direita{
+    background-color: yellow;
+    min-height: 200px;
+    width:40%;
+    float: right;
+}
+*/
+#div_principal{
+    background-image: url('./views/cidade.jpg');
+    background-size: 100%;
+    min-height: 400px;
+    /*width:60%;*/
+    padding: 50px 0 50px 0;
+    clear: both;
+    
+}
+
+#logo{
+    float: left;
+   
+}
+#menu{
+    margin-top: 30px;
+    float: right;
+}
+/* utilizando #menu e a tag 'a' seleciona por exclusivo apenas aquela propriedade*/
+/*text-decoration tira o sublinhado*/
+#menu a{
+    padding: 63px 20px;
+    text-decoration: none;
+    color: #111111;
+    text-shadow: 1px 1px 1px #C0C0C0;
+}
+
+/*Esta propriedade serve para quando passar o mouse em cima de um menu ele destaca com outro background*/
+#menu a:hover{
+    background-color: #111111;
+    color:#00CED1;
+    
+}
+
+
+
+/* Para se declarar uma class em css se utiliza um "."*/
+
+.container{
+    width: 960px;
+    margin:0 auto;
+}
+
+/* este efeito faz com que o texto fique de forma destacada e mais classica */
+.efeito{
+    background-color:rgba(0, 0, 0,  0.5);
+    padding:80px 0px 80px 0px; 
+}
